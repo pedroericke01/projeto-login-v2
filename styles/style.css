@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}   
+
+html,body{
+    width: 99vw;
+    height: 100vh;
+
+    font-family: Arial, Helvetica, sans-serif;    
+    background-color: black;
+    background-image: url("../images/background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+
+    position: relative;
+}
+
+body > main{
+    width: 70%;
+    height: 600px;
+    padding: 10px;
+    border-radius: 20px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: rgba(0, 0, 0, 0.421);
+    box-shadow: 1px 1px 1px black;
+}
+main > form{
+    width: 100%;
+    height: 100%;
+    padding-top: 10%;
+}
+main > form > img{
+    display: block;
+    margin: auto;
+
+    width: 170px;
+    height: 160px;
+    
+    border-style: groove;
+    border-width: 2px;
+    border-radius: 30px 10px;
+
+    border-color: black;
+    box-shadow: 1px 1px 1px black;
+}
+main > form > span.material-symbols-outlined{
+    padding: 4px;
+    margin-top: 15%;
+    margin-left: 11%;
+    border-radius: 20px;
+    
+    background-color: black;
+    color: white;
+    box-shadow: 1px 1px 1px black;
+}
+main > form > input{
+    display: block;
+
+    width: 50%;
+    padding: 9px;
+    margin-top: -12%;
+    margin-left: 25%;
+    
+    border-style: groove;
+    border-width: 1px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px black;
+}
+main > form > input[type="submit"]{
+    width: 56%;
+    margin-top: 7%;
+    margin-bottom: 17%;
+
+    font-weight: 400;
+    color: whitesmoke;
+    background-color: rgb(40, 230, 40);
+    border-color: rgb(40, 230, 40);
+    
+    cursor: pointer;
+
+    transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+}
+main > form > input[type="submit"]:hover{
+    background-color: rgb(21, 186, 21);
+}
+main > form > input[type="reset"]{
+    width: 56%;
+    
+    cursor: pointer;
+
+    background-color: rgba(255, 255, 255, 0);
+    color: whitesmoke;
+    font-weight: 300;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: #003f49;
+
+    transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+}
+main > form > input[type='reset']:hover{
+    background-color: red;
+}
